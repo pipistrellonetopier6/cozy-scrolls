@@ -3,20 +3,20 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Bloom E-commerce",
+    title: "Pinch of Salt",
     description: "Moderný internetový obchod vytvorený pomocou Reactu a integrovaný s headless CMS",
     tags: ["E-commerce", "React", "API Integrácia"],
     image: "bg-gradient-to-br from-primary/10 to-accent/30"
   },
   {
-    title: "Tempo Dashboard",
+    title: "FQS Group",
     description: "Analytický dashboard pre SaaS aplikáciu s vizualizáciou údajov v reálnom čase",
     tags: ["Dashboard", "Vizualizácia dát", "SaaS"],
     image: "bg-gradient-to-tr from-secondary/20 to-primary/10"
   },
   {
-    title: "FoodFinder App",
-    description: "Platforma na objavovanie reštaurácií s vyhľadávaním na základe polohy a recenziami",
+    title: "DroneFinder",
+    description: "Platforma na objavovanie drone pilots s vyhľadávaním na základe polohy a ich recenziami",
     tags: ["Geolokácia", "Recenzie", "Mobile-first"],
     image: "bg-gradient-to-bl from-accent/20 to-primary/10"
   }
