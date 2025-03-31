@@ -4,20 +4,20 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote: "Spolupráca s Birne bola ako sen. Transformovali našu zastaranú webovú stránku na modernú, funkčnú platformu, ktorá prináša reálne výsledky pre naše podnikanie.",
-    author: "Sarah J.",
-    company: "Bloom Boutique",
+    author: "Simon M.",
+    company: "Pinch of Salt",
     image: "bg-gradient-to-br from-primary/20 to-muted"
   },
   {
     quote: "Technické znalosti tímu sa vyrovnajú len ich záväzku porozumieť našim potrebám. Dodali nám vlastnú webovú aplikáciu, ktorá prekonala naše očakávania.",
-    author: "Michael T.",
-    company: "Tempo Analytics",
+    author: "Dominik R.",
+    company: "FQS Group",
     image: "bg-gradient-to-tr from-muted to-primary/20"
   },
   {
     quote: "Čo odlišuje Birne, je ich pozornosť k detailom. Od dizajnu po vývoj, každý aspekt nášho projektu bol spracovaný s starostlivosťou a presnosťou.",
-    author: "Elena R.",
-    company: "FoodFinder",
+    author: "Ondrej V.",
+    company: "DroneFinder",
     image: "bg-gradient-to-bl from-primary/20 to-muted"
   }
 ];
