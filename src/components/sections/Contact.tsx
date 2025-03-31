@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -45,15 +45,11 @@ const Contact = () => {
             <div className="space-y-4 pt-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3" />
-                <span>ahoj@birne.sk</span>
-              </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-primary mr-3" />
-                <span>+421 903 123 456</span>
+                <span>tomasmlady@birne.tech</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-primary mr-3" />
-                <span>Webová 123, 811 01 Bratislava</span>
+                <span>Albina Brunovskeho 6, 841 05 Bratislava</span>
               </div>
             </div>
           </div>
