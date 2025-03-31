@@ -13,23 +13,54 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
     
-    toast({
-      title: "Správa odoslaná!",
-      description: "Ozveme sa vám čo najskôr.",
-    });
-    
-    setFormData({ name: "", email: "", message: "" });
+    try {
+      // Email submission logic
+      const response = await fetch("https://formsubmit.co/ajax/tomasmlady@birne.tech", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `Nová správa od ${formData.name}`,
+        }),
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        toast({
+          title: "Správa odoslaná!",
+          description: "Ozveme sa vám čo najskôr.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Nepodarilo sa odoslať formulár");
+      }
+    } catch (error) {
+      console.error("Chyba pri odosielaní formulára:", error);
+      toast({
+        title: "Chyba",
+        description: "Nepodarilo sa odoslať správu. Skúste to prosím neskôr.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -94,8 +125,9 @@ const Contact = () => {
                 />
               </div>
               
-              <Button type="submit" className="w-full">
-                Odoslať správu <ArrowRight className="ml-2 h-4 w-4" />
+              <Button type="submit" disabled={isSubmitting} className="w-full">
+                {isSubmitting ? "Odosielanie..." : "Odoslať správu"} 
+                {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
               </Button>
             </form>
           </div>
