@@ -5,17 +5,17 @@ const stats = [
   {
     icon: <Users className="h-8 w-8" />,
     value: "10+",
-    label: "Happy Clients"
+    label: "Spokojných klientov"
   },
   {
     icon: <Award className="h-8 w-8" />,
     value: "25+",
-    label: "Projects Completed"
+    label: "Dokončených projektov"
   },
   {
     icon: <Clock className="h-8 w-8" />,
     value: "5+",
-    label: "Years Experience"
+    label: "Rokov skúseností"
   }
 ];
 
@@ -25,12 +25,12 @@ const About = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 order-2 lg:order-1 reveal">
-            <h2 className="text-3xl md:text-4xl font-bold">Small team, big impact</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Malý tím, veľký dopad</h2>
             <p className="text-muted-foreground text-lg">
-              PixelWave is a boutique web development agency founded on the belief that great websites don't require huge teams — just the right expertise and attention to detail.
+              Birne je butikovou agentúrou pre vývoj webových stránok založenou na presvedčení, že skvelé webové stránky nevyžadujú veľké tímy — len správne odborné znalosti a pozornosť k detailom.
             </p>
             <p className="text-muted-foreground">
-              Our small team of dedicated developers brings together years of experience in creating beautiful, functional, and high-performing websites. We pride ourselves on a collaborative approach that lets us understand your unique needs and deliver websites that truly represent your brand and meet your objectives.
+              Náš malý tím oddaných vývojárov spája roky skúseností s vytváraním krásnych, funkčných a vysoko výkonných webových stránok. Sme hrdí na náš spolupracujúci prístup, ktorý nám umožňuje porozumieť vašim jedinečným potrebám a dodávať webové stránky, ktoré skutočne reprezentujú vašu značku a plnia vaše ciele.
             </p>
             
             <div className="grid grid-cols-3 gap-4 pt-4">
@@ -48,7 +48,7 @@ const About = () => {
             <div className="w-full h-full bg-gradient-to-tr from-primary/5 to-primary/20 flex items-center justify-center">
               <div className="p-8 text-center">
                 <div className="text-xl font-medium text-foreground/80">
-                  "Great websites are built with care, precision, and a deep understanding of what makes users engage."
+                  "Skvelé webové stránky sú postavené so starostlivosťou, presnosťou a hlbokým porozumením toho, čo spôsobuje zapojenie používateľov."
                 </div>
               </div>
             </div>

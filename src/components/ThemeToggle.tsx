@@ -38,7 +38,7 @@ const ThemeToggle = () => {
       ) : (
         <Sun className="h-5 w-5 transition-all" />
       )}
-      <span className="sr-only">Toggle theme</span>
+      <span className="sr-only">Prepnúť tému</span>
     </Button>
   );
 };

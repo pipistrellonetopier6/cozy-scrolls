@@ -25,8 +25,8 @@ const Contact = () => {
     console.log("Form submitted:", formData);
     
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
+      title: "Správa odoslaná!",
+      description: "Ozveme sa vám čo najskôr.",
     });
     
     setFormData({ name: "", email: "", message: "" });
@@ -37,23 +37,23 @@ const Contact = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6 reveal">
-            <h2 className="text-3xl md:text-4xl font-bold">Let's Talk</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Porozprávajme sa</h2>
             <p className="text-muted-foreground text-lg">
-              Ready to start your next web project? We'd love to hear from you and discuss how we can bring your vision to life.
+              Ste pripravení začať svoj ďalší webový projekt? Radi sa s vami spojíme a prediskutujeme, ako môžeme vašu víziu premeniť na skutočnosť.
             </p>
             
             <div className="space-y-4 pt-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3" />
-                <span>hello@pixelwave.dev</span>
+                <span>ahoj@birne.sk</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3" />
-                <span>+1 (555) 123-4567</span>
+                <span>+421 903 123 456</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-primary mr-3" />
-                <span>123 Web Street, Digital City</span>
+                <span>Webová 123, 811 01 Bratislava</span>
               </div>
             </div>
           </div>
@@ -61,13 +61,13 @@ const Contact = () => {
           <div className="bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border/50 reveal">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <label htmlFor="name" className="text-sm font-medium">Name</label>
+                <label htmlFor="name" className="text-sm font-medium">Meno</label>
                 <Input
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your name"
+                  placeholder="Vaše meno"
                   required
                 />
               </div>
@@ -80,26 +80,26 @@ const Contact = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="your.email@example.com"
+                  placeholder="vas.email@priklad.sk"
                   required
                 />
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">Message</label>
+                <label htmlFor="message" className="text-sm font-medium">Správa</label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your project..."
+                  placeholder="Povedzte nám o vašom projekte..."
                   rows={5}
                   required
                 />
               </div>
               
               <Button type="submit" className="w-full">
-                Send Message <ArrowRight className="ml-2 h-4 w-4" />
+                Odoslať správu <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </form>
           </div>

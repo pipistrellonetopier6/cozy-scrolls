@@ -5,23 +5,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const services = [
   {
     icon: <Layout className="h-10 w-10" />,
-    title: "Web Design",
-    description: "Clean and intuitive interfaces that elevate your brand and engage your users."
+    title: "Webový dizajn",
+    description: "Čisté a intuitívne rozhrania, ktoré pozdvihnú vašu značku a zaujmú vašich používateľov."
   },
   {
     icon: <Code className="h-10 w-10" />,
-    title: "Web Development",
-    description: "Custom web applications built with modern technologies for optimal performance."
+    title: "Vývoj webových stránok",
+    description: "Vlastné webové aplikácie vytvorené pomocou moderných technológií pre optimálny výkon."
   },
   {
     icon: <Smartphone className="h-10 w-10" />,
-    title: "Responsive Design",
-    description: "Websites that look and function beautifully across all devices and screen sizes."
+    title: "Responzívny dizajn",
+    description: "Webové stránky, ktoré vyzerajú a fungujú skvele na všetkých zariadeniach a veľkostiach obrazovky."
   },
   {
     icon: <Rocket className="h-10 w-10" />,
-    title: "Performance Optimization",
-    description: "Speed up your site for better user experience and improved search rankings."
+    title: "Optimalizácia výkonu",
+    description: "Zrýchlite svoju stránku pre lepšiu používateľskú skúsenosť a lepšie umiestnenie vo vyhľadávaní."
   }
 ];
 
@@ -30,9 +30,9 @@ const Services = () => {
     <section id="services" className="section-padding bg-muted/30">
       <div className="section-container space-y-12">
         <div className="text-center space-y-4 max-w-3xl mx-auto reveal">
-          <h2 className="text-3xl md:text-4xl font-bold">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Naše služby</h2>
           <p className="text-muted-foreground text-lg">
-            We specialize in creating exceptional digital experiences through these core offerings
+            Špecializujeme sa na vytváranie výnimočných digitálnych zážitkov prostredníctvom týchto kľúčových služieb
           </p>
         </div>
         

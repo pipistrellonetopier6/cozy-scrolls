@@ -3,19 +3,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Working with PixelWave was a dream. They transformed our outdated website into a modern, functional platform that's driving real results for our business.",
+    quote: "Spolupráca s Birne bola ako sen. Transformovali našu zastaranú webovú stránku na modernú, funkčnú platformu, ktorá prináša reálne výsledky pre naše podnikanie.",
     author: "Sarah J.",
     company: "Bloom Boutique",
     image: "bg-gradient-to-br from-primary/20 to-muted"
   },
   {
-    quote: "The team's technical expertise is matched only by their commitment to understanding our needs. They delivered a custom web application that exceeded our expectations.",
+    quote: "Technické znalosti tímu sa vyrovnajú len ich záväzku porozumieť našim potrebám. Dodali nám vlastnú webovú aplikáciu, ktorá prekonala naše očakávania.",
     author: "Michael T.",
     company: "Tempo Analytics",
     image: "bg-gradient-to-tr from-muted to-primary/20"
   },
   {
-    quote: "What sets PixelWave apart is their attention to detail. From design to development, every aspect of our project was handled with care and precision.",
+    quote: "Čo odlišuje Birne, je ich pozornosť k detailom. Od dizajnu po vývoj, každý aspekt nášho projektu bol spracovaný s starostlivosťou a presnosťou.",
     author: "Elena R.",
     company: "FoodFinder",
     image: "bg-gradient-to-bl from-primary/20 to-muted"
@@ -27,9 +27,9 @@ const Testimonials = () => {
     <section id="testimonials" className="section-padding">
       <div className="section-container space-y-12">
         <div className="text-center space-y-4 max-w-3xl mx-auto reveal">
-          <h2 className="text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Čo hovoria naši klienti</h2>
           <p className="text-muted-foreground text-lg">
-            Don't just take our word for it — hear from the businesses we've helped
+            Neberte len naše slovo — vypočujte si podniky, ktorým sme pomohli
           </p>
         </div>
         

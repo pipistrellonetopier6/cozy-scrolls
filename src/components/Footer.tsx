@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-2xl font-bold">
-              Pixel<span className="text-primary">Wave</span>
+              <span className="text-primary">Birne</span>
             </a>
             <p className="text-muted-foreground mt-2 text-sm">
-              Crafting digital experiences that matter
+              Tvoríme digitálne zážitky, ktoré majú zmysel
             </p>
           </div>
           
@@ -36,11 +36,11 @@ const Footer = () => {
         <div className="border-t border-border/50 my-8"></div>
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <div>© {currentYear} PixelWave. All rights reserved.</div>
+          <div>© {currentYear} Birne. Všetky práva vyhradené.</div>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms</a>
-            <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+            <a href="#" className="hover:text-primary transition-colors">Súkromie</a>
+            <a href="#" className="hover:text-primary transition-colors">Podmienky</a>
+            <a href="#" className="hover:text-primary transition-colors">Cookie politika</a>
           </div>
         </div>
       </div>

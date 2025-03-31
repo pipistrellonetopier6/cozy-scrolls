@@ -5,12 +5,12 @@ import ThemeToggle from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Domov", href: "#home" },
+  { label: "Služby", href: "#services" },
+  { label: "O nás", href: "#about" },
+  { label: "Naše práce", href: "#work" },
+  { label: "Referencie", href: "#testimonials" },
+  { label: "Kontakt", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a href="#home" className="text-2xl font-bold">
-          Pixel<span className="text-primary">Wave</span>
+          <span className="text-primary">Birne</span>
         </a>
 
         {/* Desktop Navigation */}
